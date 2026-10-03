@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asof"
+version = "0.1.0"
+description = "Time-aware GraphRAG copilot for RBI regulations"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.scripts]
+asof = "asof.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"asof.web" = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.pytest_cache/
+data/raw/
+data/index/
+data/processed/
+data/eval/results.json
+!data/eval/manual_questions.jsonl
+logs/
+
+# personal / local-only files
+docs/INTERVIEW_PREP.md
+*.log
+data/eval/relations_audit*.csv
+data/eval/*.tmp
+.aws/
+*.pem
+*.csv.bak
+*.egg-info/
+.pytest_cache/
+push_github.bat
+scripts/push_github.py
